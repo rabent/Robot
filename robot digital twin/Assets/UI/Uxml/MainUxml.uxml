@@ -1,7 +1,8 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement name="Background" style="flex-grow: 1; background-color: rgb(58, 35, 35); align-self: auto;">
-        <ui:VisualElement name="Inspector_View" style="flex-grow: 1; width: 257px; align-self: flex-end; background-color: rgb(96, 84, 90);">
-            <ui:ListView />
+    <ui:VisualElement name="Background" enabled="true" style="flex-grow: 1; background-color: rgb(58, 35, 35); align-self: auto; flex-direction: row; flex-basis: auto;">
+        <ui:VisualElement name="Main_View" style="flex-grow: 1; width: 400px; background-image: resource(&apos;Robot Texture&apos;); background-color: rgba(0, 0, 0, 0);" />
+        <ui:VisualElement name="Inspector_View" style="flex-grow: 1; width: 50px; align-self: flex-end; background-color: rgb(96, 84, 90);">
+            <ui:ListView name="ListView" style="height: 373px; width: 259px; flex-grow: 1;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

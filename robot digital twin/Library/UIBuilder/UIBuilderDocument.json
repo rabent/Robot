@@ -15,8 +15,8 @@
             {
                 "m_OpenUSSFiles": [],
                 "m_OpenendVisualTreeAssetOldPath": "Assets/UI/Uxml/MainUxml.uxml",
-                "m_UxmlPreview": "<ui:UXML xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:ui=\"UnityEngine.UIElements\" xmlns:uie=\"UnityEditor.UIElements\" noNamespaceSchemaLocation=\"../../../UIElementsSchema/UIElements.xsd\" editor-extension-mode=\"False\">\r\n    <ui:VisualElement name=\"Background\" style=\"flex-grow: 1; background-color: rgb(58, 35, 35); align-self: auto;\">\r\n        <ui:VisualElement name=\"Inspector_View\" style=\"flex-grow: 1; width: 257px; align-self: flex-end; background-color: rgb(96, 84, 90);\">\r\n            <ui:ListView />\r\n        </ui:VisualElement>\r\n    </ui:VisualElement>\r\n</ui:UXML>\r\n",
-                "m_ContentHash": 903853132,
+                "m_UxmlPreview": "<ui:UXML xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:ui=\"UnityEngine.UIElements\" xmlns:uie=\"UnityEditor.UIElements\" noNamespaceSchemaLocation=\"../../../UIElementsSchema/UIElements.xsd\" editor-extension-mode=\"False\">\r\n    <ui:VisualElement name=\"Background\" enabled=\"true\" style=\"flex-grow: 1; background-color: rgb(58, 35, 35); align-self: auto; flex-direction: row; flex-basis: auto;\">\r\n        <ui:VisualElement name=\"Main_View\" style=\"flex-grow: 1; width: 400px; background-image: resource(&apos;Robot Texture&apos;); background-color: rgba(0, 0, 0, 0);\" />\r\n        <ui:VisualElement name=\"Inspector_View\" style=\"flex-grow: 1; width: 50px; align-self: flex-end; background-color: rgb(96, 84, 90);\">\r\n            <ui:ListView name=\"ListView\" style=\"height: 373px; width: 259px; flex-grow: 1;\" />\r\n        </ui:VisualElement>\r\n    </ui:VisualElement>\r\n</ui:UXML>\r\n",
+                "m_ContentHash": 647529352,
                 "m_VisualTreeAssetRef": {
                     "fileID": 9197481963319205126,
                     "guid": "5f23a87c28dcfe0418218a5ca2a31cb7",
@@ -28,21 +28,21 @@
                 "m_Settings": {
                     "UxmlGuid": "5f23a87c28dcfe0418218a5ca2a31cb7",
                     "UxmlPath": "Assets/UI/Uxml/MainUxml.uxml",
-                    "CanvasX": -5,
+                    "CanvasX": 4,
                     "CanvasY": 0,
-                    "CanvasWidth": 379,
-                    "CanvasHeight": 430,
+                    "CanvasWidth": 861,
+                    "CanvasHeight": 373,
                     "MatchGameView": false,
-                    "ZoomScale": 1.149999976158142,
+                    "ZoomScale": 1.0499999523162842,
                     "PanOffset": {
-                        "x": -4.811431884765625,
-                        "y": 8.810928344726563
+                        "x": 126.356201171875,
+                        "y": 20.0462646484375
                     },
                     "ColorModeBackgroundOpacity": 1.0,
                     "ImageModeCanvasBackgroundOpacity": 1.0,
                     "CameraModeCanvasBackgroundOpacity": 1.0,
-                    "EnableCanvasBackground": false,
-                    "CanvasBackgroundMode": 0,
+                    "EnableCanvasBackground": true,
+                    "CanvasBackgroundMode": 1,
                     "CanvasBackgroundColor": {
                         "r": 0.0,
                         "g": 0.0,
@@ -53,7 +53,7 @@
                         "instanceID": 0
                     },
                     "CanvasBackgroundImageScaleMode": 1,
-                    "CanvasBackgroundCameraName": ""
+                    "CanvasBackgroundCameraName": "Main Camera"
                 },
                 "m_OpenSubDocumentParentIndex": -1,
                 "m_OpenSubDocumentParentSourceTemplateAssetIndex": -1
