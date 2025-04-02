@@ -2,13 +2,10 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public float rotationSpeed = 5.0f;
-    public float panSpeed = 0.5f;
-    public float zoomSpeed = 300.0f;
-    public float minZoom = 5.0f;
-    public float maxZoom = 50.0f;
-
-    private Vector3 lastMousePosition;
+    public GameObject Robot;
+    public float rotationSpeed = 50f;
+    public float zoomSpeed = 20f;
+    
 
     void Update()
     {
@@ -17,22 +14,33 @@ public class CameraController : MonoBehaviour
         HandleZoom();
     }
 
+    bool isMain() {
+        if(Input.mousePosition.x>1430) return false;
+        return true;
+    }
+
     void HandleRotation()
     {
-        if (Input.GetMouseButton(1)) 
+        if (Input.GetMouseButton(1)&&isMain()) 
         {
-            Vector3 delta = Input.mousePosition - lastMousePosition;
-            float rotationX = delta.x * rotationSpeed * Time.deltaTime;
-            float rotationY = -delta.y * rotationSpeed * Time.deltaTime;
-            
-            transform.eulerAngles += new Vector3(rotationY, rotationX, 0);
+            float xRotate = Input.GetAxis("Mouse X") * rotationSpeed;
+            float yRotate = Input.GetAxis("Mouse Y") * rotationSpeed;
+
+            Vector3 stagePosition = Robot.transform.position;
+
+            transform.RotateAround(stagePosition, Vector3.right, -yRotate);
+            transform.RotateAround(stagePosition, Vector3.up, xRotate);
+
+            transform.LookAt(stagePosition);
         }
-        lastMousePosition = Input.mousePosition;
     }
 
     void HandlePan()
     {
-        if (Input.GetMouseButton(0))
+        if(Input.GetMouseButtonDown(0)&&isMain()) {
+            transform.LookAt(Robot.transform.position);
+        }
+        if (Input.GetMouseButton(0)&&isMain())
         {
             transform.Translate(-Input.GetAxis("Mouse X")/10, Input.GetAxis("Mouse Y")/10,0);
         }
@@ -43,7 +51,7 @@ public class CameraController : MonoBehaviour
         float scroll = Input.GetAxis("Mouse ScrollWheel");
         if (scroll != 0.0f)
         {
-            Camera.main.fieldOfView+=(20*scroll);
+            Camera.main.fieldOfView+=(zoomSpeed*scroll);
             if(Camera.main.fieldOfView<10) Camera.main.fieldOfView=10;
             else if(Camera.main.fieldOfView>50) Camera.main.fieldOfView=50;
         }

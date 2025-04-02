@@ -6,7 +6,8 @@
   "inputs": [
     "C:\\Users\\raben\\Desktop\\Robot\\robot digital twin\\Packages\\manifest.json",
     "C:\\Users\\raben\\Desktop\\Robot\\robot digital twin\\Packages\\packages-lock.json",
-    "C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.44f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\BuiltInPackagesCombined.sha1"
+    "C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.44f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\BuiltInPackagesCombined.sha1",
+    "C:\\Users\\raben\\Desktop\\Robot\\robot digital twin\\Packages\\com.denis535.uitoolkit-theme-style-sheet\\package.json"
   ],
   "outputs": {
     "com.unity.ai.navigation@2.0.6": {
@@ -384,6 +385,15 @@
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
+    },
+    "com.denis535.uitoolkit-theme-style-sheet@file:C:\\Users\\raben\\Desktop\\Robot\\robot digital twin\\Packages\\com.denis535.uitoolkit-theme-style-sheet": {
+      "name": "com.denis535.uitoolkit-theme-style-sheet",
+      "displayName": "UIToolkit Theme Style Sheet",
+      "resolvedPath": "C:\\Users\\raben\\Desktop\\Robot\\robot digital twin\\Packages\\com.denis535.uitoolkit-theme-style-sheet",
+      "editorCompatibility": "2023.2.0a1",
+      "version": "1.3.1",
+      "source": "embedded",
+      "testable": true
     },
     "com.unity.modules.subsystems@1.0.0": {
       "name": "com.unity.modules.subsystems",

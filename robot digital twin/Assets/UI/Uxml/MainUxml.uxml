@@ -1,20 +1,25 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Uss/Button.uss?fileID=7433441132597879392&amp;guid=f48f2f65aa8a4df4780b4bf0b00c0c23&amp;type=3#Button" />
+    <Style src="project://database/Assets/UI/Uss/Label.uss?fileID=7433441132597879392&amp;guid=0dd5187fb84d3dd408024f72f8f6f5eb&amp;type=3#Label" />
+    <Style src="project://database/Assets/UI/Uss/Box.uss?fileID=7433441132597879392&amp;guid=7cc3b530162893f4dbab7796db51acc6&amp;type=3#Box" />
+    <Style src="project://database/Assets/UI/Uss/View.uss?fileID=7433441132597879392&amp;guid=78f506248be5d0e4d876f36074178a0f&amp;type=3#View" />
+    <Style src="project://database/Assets/UI/Uss/Field.uss?fileID=7433441132597879392&amp;guid=3e205f93a3d27a64ca196d47a6162c52&amp;type=3#Field" />
     <ui:VisualElement name="Background" enabled="true" style="flex-grow: 1; background-color: rgb(58, 35, 35); align-self: auto; flex-direction: row; flex-basis: auto; align-content: flex-start; flex-wrap: nowrap;">
         <ui:VisualElement name="Main_View" style="flex-grow: 1; width: 1000px; background-image: resource(&apos;Robot Texture&apos;); background-color: rgba(0, 0, 0, 0);" />
         <ui:VisualElement name="Inspector_View" style="flex-grow: 1; width: 50px; align-self: flex-end; background-color: rgb(96, 84, 90); height: 1080px;">
             <ui:VisualElement name="LabelView" style="flex-grow: 1; flex-direction: row; flex-wrap: wrap; align-items: center; align-content: center;">
-                <ui:Label text="J1" name="J1" style="flex-grow: 0; width: 70px;" />
-                <ui:Label text="Label" name="J1Value" style="flex-grow: 1; width: 400px;" />
-                <ui:Label text="J2" name="J2" style="flex-grow: 0; width: 70px; height: 26px;" />
-                <ui:Label text="Label" name="J2Value" style="flex-grow: 1; width: 400px;" />
-                <ui:Label text="J3" name="J3" style="flex-grow: 0; width: 70px;" />
-                <ui:Label text="Label" name="J3Value" style="flex-grow: 1; width: 400px;" />
-                <ui:Label text="J4" name="J4" style="flex-grow: 0; width: 70px;" />
-                <ui:Label text="Label" name="J4Value" style="flex-grow: 1; width: 400px;" />
-                <ui:Label text="J5" name="J5" style="flex-grow: 0; width: 70px;" />
-                <ui:Label text="Label" name="J5Value" style="flex-grow: 1; width: 400px;" />
-                <ui:Label text="J6" emoji-fallback-support="true" name="J6" style="flex-grow: 0; width: 70px;" />
-                <ui:Label text="Label" name="J6Value" style="flex-grow: 1; width: 400px;" />
+                <ui:Label text="J1" name="J1" style="flex-grow: 0; width: 70px; -unity-font-style: bold; font-size: 22px; -unity-text-align: upper-center; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; background-color: rgb(241, 241, 241);" />
+                <ui:Label text="Label" name="J1Value" style="flex-grow: 1; width: 350px; font-size: 20px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); background-color: rgb(248, 244, 244);" />
+                <ui:Label text="J2" name="J2" style="flex-grow: 0; width: 70px; height: 26px; -unity-font-style: bold; font-size: 22px; -unity-text-align: upper-center; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; background-color: rgb(255, 255, 255);" />
+                <ui:Label text="Label" name="J2Value" style="flex-grow: 1; width: 350px; font-size: 20px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); background-color: rgb(255, 247, 247);" />
+                <ui:Label text="J3" name="J3" style="flex-grow: 0; width: 70px; -unity-font-style: bold; font-size: 22px; -unity-text-align: upper-center; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; background-color: rgb(255, 255, 255);" />
+                <ui:Label text="Label" name="J3Value" style="flex-grow: 1; width: 350px; font-size: 20px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); -unity-background-image-tint-color: rgb(248, 248, 248); background-color: rgb(255, 251, 251);" />
+                <ui:Label text="J4" name="J4" style="flex-grow: 0; width: 70px; -unity-font-style: bold; font-size: 22px; -unity-text-align: upper-center; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; background-color: rgb(255, 255, 255);" />
+                <ui:Label text="Label" name="J4Value" style="flex-grow: 1; width: 350px; font-size: 20px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); -unity-background-image-tint-color: rgb(255, 255, 255); background-color: rgb(255, 255, 255);" />
+                <ui:Label text="J5" name="J5" style="flex-grow: 0; width: 70px; -unity-font-style: bold; font-size: 22px; -unity-text-align: upper-center; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; background-color: rgb(255, 255, 255);" />
+                <ui:Label text="Label" name="J5Value" style="flex-grow: 1; width: 350px; font-size: 20px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" />
+                <ui:Label text="J6" emoji-fallback-support="true" name="J6" style="flex-grow: 0; width: 70px; -unity-font-style: bold; font-size: 22px; -unity-text-align: upper-center; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; background-color: rgb(255, 255, 255);" />
+                <ui:Label text="Label" name="J6Value" style="flex-grow: 1; width: 350px; font-size: 20px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" />
             </ui:VisualElement>
             <ui:VisualElement name="ButtonView" style="flex-grow: 1; flex-direction: row; flex-wrap: wrap; height: 180px; justify-content: space-around; align-items: center; align-content: center;" />
         </ui:VisualElement>

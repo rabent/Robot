@@ -281,11 +281,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca21c99f948d1704aba2cfd202d1c67c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Robot: {fileID: 6469593848554258354}
   rotationSpeed: 5
-  panSpeed: 0.5
   zoomSpeed: 10
-  minZoom: 0
-  maxZoom: 300
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -932,6 +930,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4429274921505575100, guid: 6f34cec03a9c9054b81b22b2a31dd881, type: 3}
+      propertyPath: m_ParentAnchorPosition.y
+      value: 0.062499993
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429274921505575100, guid: 6f34cec03a9c9054b81b22b2a31dd881, type: 3}
       propertyPath: m_ParentAnchorRotation.w
       value: -0.5
       objectReference: {fileID: 0}
@@ -1040,6 +1042,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5616542518780567211, guid: 6f34cec03a9c9054b81b22b2a31dd881, type: 3}
+      propertyPath: m_ParentAnchorPosition.x
+      value: -0.42500016
+      objectReference: {fileID: 0}
+    - target: {fileID: 5616542518780567211, guid: 6f34cec03a9c9054b81b22b2a31dd881, type: 3}
       propertyPath: m_ParentAnchorRotation.w
       value: 0.7071068
       objectReference: {fileID: 0}
@@ -1062,6 +1068,10 @@ PrefabInstance:
     - target: {fileID: 6743138248717022255, guid: 6f34cec03a9c9054b81b22b2a31dd881, type: 3}
       propertyPath: m_AnchorRotation.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6743138248717022255, guid: 6f34cec03a9c9054b81b22b2a31dd881, type: 3}
+      propertyPath: m_ParentAnchorPosition.y
+      value: -0.05300024
       objectReference: {fileID: 0}
     - target: {fileID: 6743138248717022255, guid: 6f34cec03a9c9054b81b22b2a31dd881, type: 3}
       propertyPath: m_ParentAnchorRotation.w
