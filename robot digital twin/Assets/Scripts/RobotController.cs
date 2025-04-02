@@ -3,18 +3,12 @@ using UnityEngine;
 
 public class RobotController : MonoBehaviour
 {   
-    private static RobotController instance=null;
-
-    public static RobotController getInstance() {
-        if(instance==null) {
-            instance=new RobotController();
-        }
-        return instance;
-    }
+    public static RobotController instance=null;
     public List<IRobot> Robots=new List<IRobot>();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {   
+        if(instance==null) instance=this;
         Transform[] joints = GetComponentsInChildren<Transform>();
         foreach(Transform joint in joints) 
         {   

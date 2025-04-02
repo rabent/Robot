@@ -975,9 +975,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4589943212570904298, guid: 6f34cec03a9c9054b81b22b2a31dd881, type: 3}
+      propertyPath: m_ParentAnchorPosition.y
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 4610345919177063463, guid: 6f34cec03a9c9054b81b22b2a31dd881, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4876980456148163611, guid: 6f34cec03a9c9054b81b22b2a31dd881, type: 3}
+      propertyPath: m_Twist
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4876980456148163611, guid: 6f34cec03a9c9054b81b22b2a31dd881, type: 3}
       propertyPath: m_AnchorRotation.w
@@ -1012,6 +1020,10 @@ PrefabInstance:
       value: 0.50000006
       objectReference: {fileID: 0}
     - target: {fileID: 5616542518780567211, guid: 6f34cec03a9c9054b81b22b2a31dd881, type: 3}
+      propertyPath: m_XDrive.target
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5616542518780567211, guid: 6f34cec03a9c9054b81b22b2a31dd881, type: 3}
       propertyPath: m_AnchorRotation.w
       value: 0.70710677
       objectReference: {fileID: 0}
@@ -1021,6 +1033,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5616542518780567211, guid: 6f34cec03a9c9054b81b22b2a31dd881, type: 3}
       propertyPath: m_AnchorRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5616542518780567211, guid: 6f34cec03a9c9054b81b22b2a31dd881, type: 3}
+      propertyPath: m_XDrive.driveType
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5616542518780567211, guid: 6f34cec03a9c9054b81b22b2a31dd881, type: 3}
@@ -1082,6 +1098,18 @@ PrefabInstance:
     - target: {fileID: 8246981083607700646, guid: 6f34cec03a9c9054b81b22b2a31dd881, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8337633141624819633, guid: 6f34cec03a9c9054b81b22b2a31dd881, type: 3}
+      propertyPath: m_MatchAnchors
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8337633141624819633, guid: 6f34cec03a9c9054b81b22b2a31dd881, type: 3}
+      propertyPath: m_XDrive.damping
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8337633141624819633, guid: 6f34cec03a9c9054b81b22b2a31dd881, type: 3}
+      propertyPath: m_XDrive.stiffness
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8396035962513094373, guid: 6f34cec03a9c9054b81b22b2a31dd881, type: 3}
       propertyPath: m_LocalRotation.w
