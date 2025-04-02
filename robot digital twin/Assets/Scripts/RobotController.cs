@@ -10,9 +10,13 @@ public class RobotController : MonoBehaviour
     {   
         if(instance==null) instance=this;
         Transform[] joints = GetComponentsInChildren<Transform>();
+        int count=0;
         foreach(Transform joint in joints) 
         {   
-            if(joint.name == "joint") Robots.Add(joint.GetComponent<IRobot>());
+            if(joint.name == "joint") {
+                Robots.Add(joint.GetComponent<IRobot>());
+                Robots[count].idx=count; count++;
+            }
         }  
     }
 

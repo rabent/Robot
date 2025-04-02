@@ -15,8 +15,8 @@
             {
                 "m_OpenUSSFiles": [],
                 "m_OpenendVisualTreeAssetOldPath": "Assets/UI/Uxml/MainUxml.uxml",
-                "m_UxmlPreview": "<ui:UXML xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:ui=\"UnityEngine.UIElements\" xmlns:uie=\"UnityEditor.UIElements\" noNamespaceSchemaLocation=\"../../../UIElementsSchema/UIElements.xsd\" editor-extension-mode=\"False\">\r\n    <ui:VisualElement name=\"Background\" enabled=\"true\" style=\"flex-grow: 1; background-color: rgb(58, 35, 35); align-self: auto; flex-direction: row; flex-basis: auto; align-content: flex-start; flex-wrap: nowrap;\">\r\n        <ui:VisualElement name=\"Main_View\" style=\"flex-grow: 1; width: 1000px; background-image: resource(&apos;Robot Texture&apos;); background-color: rgba(0, 0, 0, 0);\" />\r\n        <ui:VisualElement name=\"Inspector_View\" style=\"flex-grow: 1; width: 50px; align-self: flex-end; background-color: rgb(96, 84, 90); height: 1080px;\">\r\n            <ui:ListView name=\"ListView\" style=\"height: 200px; width: 482px; flex-grow: 1;\" />\r\n            <ui:VisualElement name=\"ButtonView\" style=\"flex-grow: 1; flex-direction: row; flex-wrap: wrap; height: 250px; justify-content: space-around; align-items: center; align-content: center;\" />\r\n        </ui:VisualElement>\r\n    </ui:VisualElement>\r\n</ui:UXML>\r\n",
-                "m_ContentHash": -412004722,
+                "m_UxmlPreview": "<ui:UXML xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:ui=\"UnityEngine.UIElements\" xmlns:uie=\"UnityEditor.UIElements\" noNamespaceSchemaLocation=\"../../../UIElementsSchema/UIElements.xsd\" editor-extension-mode=\"False\">\r\n    <ui:VisualElement name=\"Background\" enabled=\"true\" style=\"flex-grow: 1; background-color: rgb(58, 35, 35); align-self: auto; flex-direction: row; flex-basis: auto; align-content: flex-start; flex-wrap: nowrap;\">\r\n        <ui:VisualElement name=\"Main_View\" style=\"flex-grow: 1; width: 1000px; background-image: resource(&apos;Robot Texture&apos;); background-color: rgba(0, 0, 0, 0);\" />\r\n        <ui:VisualElement name=\"Inspector_View\" style=\"flex-grow: 1; width: 50px; align-self: flex-end; background-color: rgb(96, 84, 90); height: 1080px;\">\r\n            <ui:VisualElement name=\"LabelView\" style=\"flex-grow: 1; flex-direction: row; flex-wrap: wrap; align-items: center; align-content: center;\">\r\n                <ui:Label text=\"J1\" name=\"J1\" style=\"flex-grow: 0; width: 70px;\" />\r\n                <ui:Label text=\"Label\" name=\"J1Value\" style=\"flex-grow: 1; width: 400px;\" />\r\n                <ui:Label text=\"J2\" name=\"J2\" style=\"flex-grow: 0; width: 70px; height: 26px;\" />\r\n                <ui:Label text=\"Label\" name=\"J2Value\" style=\"flex-grow: 1; width: 400px;\" />\r\n                <ui:Label text=\"J3\" name=\"J3\" style=\"flex-grow: 0; width: 70px;\" />\r\n                <ui:Label text=\"Label\" name=\"J3Value\" style=\"flex-grow: 1; width: 400px;\" />\r\n                <ui:Label text=\"J4\" name=\"J4\" style=\"flex-grow: 0; width: 70px;\" />\r\n                <ui:Label text=\"Label\" name=\"J4Value\" style=\"flex-grow: 1; width: 400px;\" />\r\n                <ui:Label text=\"J5\" name=\"J5\" style=\"flex-grow: 0; width: 70px;\" />\r\n                <ui:Label text=\"Label\" name=\"J5Value\" style=\"flex-grow: 1; width: 400px;\" />\r\n                <ui:Label text=\"J6\" emoji-fallback-support=\"true\" name=\"J6\" style=\"flex-grow: 0; width: 70px;\" />\r\n                <ui:Label text=\"Label\" name=\"J6Value\" style=\"flex-grow: 1; width: 400px;\" />\r\n            </ui:VisualElement>\r\n            <ui:VisualElement name=\"ButtonView\" style=\"flex-grow: 1; flex-direction: row; flex-wrap: wrap; height: 180px; justify-content: space-around; align-items: center; align-content: center;\" />\r\n        </ui:VisualElement>\r\n    </ui:VisualElement>\r\n</ui:UXML>\r\n",
+                "m_ContentHash": -334505948,
                 "m_VisualTreeAssetRef": {
                     "fileID": 9197481963319205126,
                     "guid": "5f23a87c28dcfe0418218a5ca2a31cb7",
@@ -33,10 +33,10 @@
                     "CanvasWidth": 1920,
                     "CanvasHeight": 1080,
                     "MatchGameView": true,
-                    "ZoomScale": 0.4000000059604645,
+                    "ZoomScale": 0.6000000238418579,
                     "PanOffset": {
-                        "x": 29.359832763671876,
-                        "y": 160.61663818359376
+                        "x": -327.37908935546877,
+                        "y": 96.76736450195313
                     },
                     "ColorModeBackgroundOpacity": 1.0,
                     "ImageModeCanvasBackgroundOpacity": 1.0,

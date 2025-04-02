@@ -19,7 +19,7 @@ public class CameraController : MonoBehaviour
 
     void HandleRotation()
     {
-        if (Input.GetMouseButton(1)) // 오른쪽 마우스 버튼
+        if (Input.GetMouseButton(1)) 
         {
             Vector3 delta = Input.mousePosition - lastMousePosition;
             float rotationX = delta.x * rotationSpeed * Time.deltaTime;
@@ -32,13 +32,10 @@ public class CameraController : MonoBehaviour
 
     void HandlePan()
     {
-        if (Input.GetMouseButton(0)) // 가운데 마우스 버튼 (휠 클릭)
+        if (Input.GetMouseButton(0))
         {
-            Vector3 delta = Input.mousePosition - lastMousePosition;
-            Vector3 move = new Vector3(-delta.x * panSpeed * Time.deltaTime, -delta.y * panSpeed * Time.deltaTime, 0);
-            transform.Translate(move, Space.Self);
+            transform.Translate(-Input.GetAxis("Mouse X")/10, Input.GetAxis("Mouse Y")/10,0);
         }
-        lastMousePosition = Input.mousePosition;
     }
 
     void HandleZoom()
@@ -46,19 +43,9 @@ public class CameraController : MonoBehaviour
         float scroll = Input.GetAxis("Mouse ScrollWheel");
         if (scroll != 0.0f)
         {
-            Vector3 direction = transform.forward * scroll * zoomSpeed * Time.deltaTime;
-            transform.position += direction;
-
-            // 줌 제한 적용
-            float distance = Vector3.Distance(transform.position, Vector3.zero);
-            if (distance < minZoom)
-            {
-                transform.position -= direction;
-            }
-            else if (distance > maxZoom)
-            {
-                transform.position -= direction;
-            }
+            Camera.main.fieldOfView+=(20*scroll);
+            if(Camera.main.fieldOfView<10) Camera.main.fieldOfView=10;
+            else if(Camera.main.fieldOfView>50) Camera.main.fieldOfView=50;
         }
     }
 }
